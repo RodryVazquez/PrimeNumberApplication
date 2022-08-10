@@ -16,8 +16,9 @@ class MainActivity : AppCompatActivity() {
 
     private var primeNumberAdapter: PrimeNumberAdapter? = null
 
-    private var pageStartIndex = 2
-    private var size = 10
+    // 0 and 1 are ignored by default
+    private var startIndex = 2
+    private var chunkSize = 20
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         setupRecyclerView(binding.primeNumbersRecyclerView)
-        viewModel.fetchPrimeNumbers(pageStartIndex, size)
+        viewModel.fetchPrimeNumbers(startIndex, chunkSize)
     }
 
     override fun onResume() {
@@ -53,9 +54,9 @@ class MainActivity : AppCompatActivity() {
 
                 if (visibleItemCount + firstVisibleItemPosition >= totalItemCount && firstVisibleItemPosition >= 0) {
 
-                    pageStartIndex = size + 1
-                    size += size
-                    viewModel.fetchPrimeNumbers(pageStartIndex, size)
+                    startIndex = chunkSize + 1
+                    chunkSize += chunkSize
+                    viewModel.fetchPrimeNumbers(startIndex, chunkSize)
                 }
             }
         })
