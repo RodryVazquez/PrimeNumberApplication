@@ -10,6 +10,7 @@ public class DataProvider {
 
     public DataProvider(){}
 
+
     public List<PrimeNumberItem> getPrimeNumberItemList() {
         return primeNumberItemList;
     }
