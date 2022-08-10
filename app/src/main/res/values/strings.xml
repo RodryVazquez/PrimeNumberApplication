@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">PrimeNumberApplication</string>
     <string name="home_title">Expected output</string>
+    <string name="value_place_holder">0</string>
 </resources>
