@@ -12,7 +12,7 @@
         android:textSize="20sp"
         android:gravity="center"
         android:textStyle="bold"
-        android:text="0"/>
+        android:text="@string/value_place_holder"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/indexValue"
@@ -21,6 +21,6 @@
         android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:text="0"/>
+        android:text="@string/value_place_holder"/>
 
 </LinearLayout>

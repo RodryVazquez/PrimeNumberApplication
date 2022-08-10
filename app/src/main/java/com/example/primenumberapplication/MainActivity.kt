@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private var primeNumberAdapter: PrimeNumberAdapter? = null
 
-    private var pageStartIndex = 0
+    private var pageStartIndex = 2
     private var size = 10
 
     override fun onCreate(savedInstanceState: Bundle?) {
