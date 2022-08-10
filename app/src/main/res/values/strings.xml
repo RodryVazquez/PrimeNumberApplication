@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PrimeNumberApplication</string>
+    <string name="home_title">Expected output</string>
+</resources>
