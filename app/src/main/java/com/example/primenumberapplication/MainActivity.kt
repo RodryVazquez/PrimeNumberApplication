@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     // 0 and 1 are ignored by default
     private var startIndex = 2
-    private var chunkSize = 20
+    private var chunkSize = 25
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
